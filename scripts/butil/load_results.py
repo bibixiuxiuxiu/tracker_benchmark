@@ -60,7 +60,7 @@ def load_result(evalType, tracker):
                 attrFile = open(os.path.join(attrSrc, attrName))
                 string = attrFile.read()
                 j = json.loads(string)
-                attr = Attribute(**j)
+                attr = attr = Score(**j)
                 attr.successRateList = map(lambda o:o*100, attr.successRateList)
                 attrs.append(attr)
                 attrs.sort()

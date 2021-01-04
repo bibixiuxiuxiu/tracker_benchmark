@@ -53,6 +53,7 @@ def calc_result(tracker, seqs, results, evalType):
     attrList.append(allAttr)
     for attr in attrList:
         successRateList = []
+        precisionList = []
         attr.tracker = tracker
         attr.evalType = evalType
         attr.seqs = []
